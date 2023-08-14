@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details Page</title>
+    <link rel="stylesheet" href="Details.css">
+    <script src="Details.js"></script>
+</head>
+<body>
+    <nav><img src="9988/20230511_234030_0000.png" class="polo"></nav>
+    <header>
+        <h1>DETAILS</h1>
+        <a href="purchase.html">Create a new ticket</a>
+        <span>|</span>
+        <a href="confirm.html">View all tickets</a>
+    </header>
+    <div class="Tickets-continue-pg">
+        <div class="rectangle-parent">
+            <section id="details">
+                <h2>ENTER YOUR DETAILS</h2>
+                <form id="details-form">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <select id="countryCode" name="countryCode" required>
+                        <option value="">Select Country</option>
+                        <option value="+91">India</option>
+                        <option value="+94">Sri Lanka</option>
+                    <option value="+1">United States</option>
+                    <option value="+65">Singapore</option>
+                    <option value="+86">China</option>
+                    <option value="+44">United Kingdom</option>
+                    <option value="+33">France</option>
+                    <option value="+49">Germany</option>
+                    <option value="+81">Japan</option>
+                    <option value="+61">Australia</option>
+                    <option value="+82">South Korea</option>
+                    <option value="+7">Russia</option>
+                    <option value="+55">Brazil</option>
+                    <option value="+34">Spain</option>
+                    <option value="+39">Italy</option>
+                    <option value="+971">United Arab Emirates</option>
+                    <option value="+31">Netherlands</option>
+                    <option value="+966">Saudi Arabia</option>
+                    <option value="+20">Egypt</option>
+                    <option value="+90">Turkey</option>
+                    <option value="+354">Iceland</option>
+                    <option value="+81">Japan</option>
+                    <option value="+82">South Korea</option>
+                  </select>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="555 555 5555" required>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                  <label for="confirmEmail">Confirm Email:</label>
+                  <input type="email" id="confirmEmail" name="confirmEmail" placeholder="you@example.com" required>
+                  <label for="gender">Gender:</label>
+                  <select id="gender" name="gender" required>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                  </select>
+                  <div class="error-message"></div>
+                  
+
+            <button type="submit">Continue with purchase</button>
+              </form>
+          </section>
+          <section2 id="summary">
+            <h2>Summary</h2>
+            <table>
+              <tr>
+                <td>Date</td>
+                <td id="summaryDate"></td>
+              </tr>
+              <tr>
+                <td>Time</td>
+                <td id="summaryTime"></td>
+              </tr>
+              <tr>
+                <td>Duration</td>
+                <td id="summaryDuration"></td>
+              </tr>
+              <tr>
+                <td>Tickets</td>
+                <td id="summaryTickets"></td>
+              </tr>
+              <tr>
+                <td>Total Payable</td>
+                <td id="summaryTotal"></td>
+              </tr>
+            </table>
+            
+      
+            
+          </section2>
+      </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+

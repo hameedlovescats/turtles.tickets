@@ -1,0 +1,257 @@
+body, h1, p, label, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0afdc;
+  }
+
+.polo {
+    width: 90px; 
+    position: absolute;
+    top: 53px; 
+    left: 30px; 
+  }
+
+header {
+    background-image: url(9988/turtle-sea-underwater-ocean.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 70px;
+    color: #fff;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 800;
+    background: url(9988/download\ \(1\).jpeg);
+    background-size: 40px;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: zoomloop 10s ease infinite;
+    transition: 0.5s;
+  }
+  
+  @keyframes zoomloop {
+    0%, 100% {
+      background-size: 10%;
+    }
+    50% {
+      background-size: 40%;
+    }}
+    header a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      position: relative;
+      transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  header a:hover {
+      transform: scale(1.1);
+  }
+  
+  header a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #1b3051bf;
+      opacity: 0;
+      transition: opacity 0.3s;
+  }
+  
+  header a:hover::before {
+      opacity: 1;
+  }
+
+/* #confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.confirmation-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; */
+
+.image-container {
+  position: relative;
+  width: 300px; 
+  height: 550px; 
+}
+
+.image-container img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.image-container::after {
+  /* content: "Text Over Image"; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+.imageeee {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imageeee img {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.imageeee p {
+  margin: 0;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  
+  margin-top: 40px;
+  color: #ffffff;
+}
+.container .card .image {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.container .card .image img {
+  width: 470px;
+  height: 270px;
+  object-fit: cover;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.container .card {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  margin: 50px;
+}
+
+.container .card:nth-of-type(2) {
+  transform: rotate(5deg);
+}
+
+.container .card .image {
+  position: relative;
+  width: 450px;
+  height: 250px;
+  background-size: cover;
+ 
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 250px;
+  border: 10px solid  #1b3051;
+  z-index: 1;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 7px 7px 21px #ffffff, -7px -7px 21px #2b283b;
+  background: transparent;
+ 
+}
+
+
+
+
+
+.container .card .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 250px;
+  transform: translate(10px, 10px);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  line-height: 1.4;
+  font-size: 20px;
+ 
+}
+
+.container .card:hover .info {
+  opacity: 100;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #594949;
+  border-radius: 4px;
+  
+}
+
+th{
+
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #1b3051;
+  color: #ffffff;
+}
+

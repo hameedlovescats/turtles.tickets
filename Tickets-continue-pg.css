@@ -1,0 +1,217 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, table {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: #b0afdc;
+  }
+
+  .polo {
+    width: 90px; /* Adjust the width to your preferred size */
+    position: absolute;
+    top: 53px; /* Adjust the top distance as needed */
+    left: 30px; /* Adjust the left distance as needed */
+  }
+
+
+  header {
+    background-image: url(9988/turtle-sea-underwater-ocean.jpg); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 70px;
+    color: #fff;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 800;
+    background: url(9988/download\ \(1\).jpeg);
+    background-size: 40px;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: zoomloop 10s ease infinite;
+    transition: 0.5s;
+  }
+  
+  @keyframes zoomloop {
+    0%, 100% {
+      background-size: 10%;
+    }
+    50% {
+      background-size: 40%;
+    }
+  }
+  
+  
+  nav {
+    text-align: center;
+    background-color:transparent;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 50px;
+    font-weight: 1000;
+    position: relative;
+    transition: color 0.3s;
+    font-size: 20px;
+  }
+  
+  nav a:hover {
+    color: #83ffff;
+  }
+  
+  nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #2e271c;
+    transition: width 0.3s;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+
+
+.Tickets-continue-pg {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1b3051;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+section {
+    padding: 20px 0;
+   
+}
+
+section h1 {
+    color: #1b3051;
+    margin: 20px;
+}
+
+section p {
+    color: #666;
+    margin-bottom: 10px;
+    margin-right:  20px;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #594949;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #2e2e71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+section2,
+section3,
+section4,
+section5 {
+    padding: 20px 0;
+
+
+}
+
+section2 h2,
+section3 h2,
+section4 h2,
+section5 h2 {
+    color: #1b3051;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #594949;
+    border-radius: 4px;
+    
+}
+
+th{
+  
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #1b3051;
+    color: #ffffff;
+}
+
+button1 {
+  display: inline-block;
+  background-color:#1b3051;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 10px;
+}
+
+button1 a {
+  color: white;
+  text-decoration: none;
+}
+
+button1:hover {
+  background-color: #1b3051;
+  transform: scale(1.05);
+}
+
+
+@keyframes popUp {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+
+button1:hover a {
+  animation: popUp 0.5s ease-in-out forwards;
+}
+
+

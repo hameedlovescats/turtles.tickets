@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="Payment.css" />
+    <script src="Payment.js"></script>
+</head>
+<body>
+    <nav><img src="9988/20230511_234030_0000.png" class="polo"></nav>
+    <header>
+        <h1>Payment Page</h1>
+        <a href="Details.html">PREVIOUS PAGE</a> 
+        <A></A>
+        <a href="index.html">HOME</a> 
+    </header>
+
+    <section id="details">
+        <h2>Enter Your Payment Details</h2>
+        <label for="cardName">Name on Card:</label>
+        <input type="text" id="cardName" name="cardName" placeholder="Jake" />
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****" maxlength="16" />
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" />
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" placeholder="123" maxlength="3" />
+        
+        <button><a href="confirm.html"><i class="fas fa-lock"></i> Confirm Payment</a></button>
+    </section>
+    <section2 id="summary">
+        <h2>Summary</h2>
+        <table>
+          <tr>
+            <td>Date</td>
+            <td id="summaryDate"></td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td id="summaryTime"></td>
+          </tr>
+          <tr>
+            <td>Duration</td>
+            <td id="summaryDuration"></td>
+          </tr>
+          <tr>
+            <td>Tickets</td>
+            <td id="summaryTickets"></td>
+          </tr>
+          <tr>
+            <td>Total Payable</td>
+            <td id="summaryTotal"></td>
+          </tr>
+        </table>
+        
+  
+        
+      </section2>
+
+<footer>
+    
+</footer>
+  </button1>
+</body>
+</html>
